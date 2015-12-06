@@ -10,4 +10,6 @@
 
 @interface CarouselCell : UICollectionViewCell
 
+@property (nonatomic, strong) NSURL *imageURL;
+
 @end

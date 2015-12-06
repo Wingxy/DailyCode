@@ -18,7 +18,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="cNn-g1-fta">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="cNn-g1-fta" customClass="CarouselCell">
                                 <rect key="frame" x="0.0" y="0.0" width="149" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -37,6 +37,9 @@
                                     <constraint firstItem="nRE-Pj-8WR" firstAttribute="leading" secondItem="cNn-g1-fta" secondAttribute="leading" id="TSd-AQ-555"/>
                                     <constraint firstAttribute="bottom" secondItem="nRE-Pj-8WR" secondAttribute="bottom" id="hnI-BG-UXE"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="iconImageView" destination="nRE-Pj-8WR" id="qFL-Yf-Aa9"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

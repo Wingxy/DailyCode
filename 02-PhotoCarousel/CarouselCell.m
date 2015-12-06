@@ -8,10 +8,23 @@
 
 #import "CarouselCell.h"
 
-@interface CarouselCell ()
+@interface CarouselCell()
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 
 @end
 
 @implementation CarouselCell
+
+// 可以使用 SDWebimage 替换图片加载
+- (void)setImageURL:(NSURL *)imageURL {
+    
+    _imageURL = imageURL;
+    
+    NSData *data = [NSData dataWithContentsOfURL:imageURL];
+    
+    self.iconImageView.image = [UIImage imageWithData:data];
+}
 
 @end

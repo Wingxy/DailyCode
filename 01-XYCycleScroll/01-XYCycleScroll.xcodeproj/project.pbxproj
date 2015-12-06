@@ -13,6 +13,11 @@
 		940B143E1C13EF6900B55F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B143C1C13EF6900B55F51 /* Main.storyboard */; };
 		940B14401C13EF6900B55F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B143F1C13EF6900B55F51 /* Assets.xcassets */; };
 		940B14431C13EF6900B55F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B14411C13EF6900B55F51 /* LaunchScreen.storyboard */; };
+		940B14511C13F13100B55F51 /* 001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 940B144C1C13F13100B55F51 /* 001.jpg */; settings = {ASSET_TAGS = (); }; };
+		940B14521C13F13100B55F51 /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 940B144D1C13F13100B55F51 /* 002.jpg */; settings = {ASSET_TAGS = (); }; };
+		940B14531C13F13100B55F51 /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 940B144E1C13F13100B55F51 /* 003.jpg */; settings = {ASSET_TAGS = (); }; };
+		940B14541C13F13100B55F51 /* 004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 940B144F1C13F13100B55F51 /* 004.jpg */; settings = {ASSET_TAGS = (); }; };
+		940B14551C13F13100B55F51 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 940B14501C13F13100B55F51 /* 005.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		940B143F1C13EF6900B55F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940B14421C13EF6900B55F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940B14441C13EF6900B55F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940B144C1C13F13100B55F51 /* 001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.jpg; sourceTree = "<group>"; };
+		940B144D1C13F13100B55F51 /* 002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.jpg; sourceTree = "<group>"; };
+		940B144E1C13F13100B55F51 /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
+		940B144F1C13F13100B55F51 /* 004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 004.jpg; sourceTree = "<group>"; };
+		940B14501C13F13100B55F51 /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		940B14321C13EF6800B55F51 /* 01-XYCycleScroll */ = {
 			isa = PBXGroup;
 			children = (
+				940B144B1C13F13100B55F51 /* Images */,
 				940B14361C13EF6900B55F51 /* AppDelegate.h */,
 				940B14371C13EF6900B55F51 /* AppDelegate.m */,
 				940B14391C13EF6900B55F51 /* ViewController.h */,
@@ -77,6 +88,18 @@
 				940B14341C13EF6900B55F51 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		940B144B1C13F13100B55F51 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				940B144C1C13F13100B55F51 /* 001.jpg */,
+				940B144D1C13F13100B55F51 /* 002.jpg */,
+				940B144E1C13F13100B55F51 /* 003.jpg */,
+				940B144F1C13F13100B55F51 /* 004.jpg */,
+				940B14501C13F13100B55F51 /* 005.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +160,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B14541C13F13100B55F51 /* 004.jpg in Resources */,
 				940B14431C13EF6900B55F51 /* LaunchScreen.storyboard in Resources */,
 				940B14401C13EF6900B55F51 /* Assets.xcassets in Resources */,
+				940B14551C13F13100B55F51 /* 005.jpg in Resources */,
 				940B143E1C13EF6900B55F51 /* Main.storyboard in Resources */,
+				940B14531C13F13100B55F51 /* 003.jpg in Resources */,
+				940B14521C13F13100B55F51 /* 002.jpg in Resources */,
+				940B14511C13F13100B55F51 /* 001.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

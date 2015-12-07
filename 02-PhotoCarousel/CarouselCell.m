@@ -23,6 +23,8 @@
     NSData *data = [NSData dataWithContentsOfURL:imageURL];
     
     self.iconView.image = [UIImage imageWithData:data];
+    
+    self.iconView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 @end

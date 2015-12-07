@@ -84,7 +84,11 @@
     
     CarouselCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
-    cell.imageURL = self.imageURLs[indexPath.item];
+    // 设置cell
+    // 显示图片索引编号 初始时
+    NSInteger index = (indexPath.item - 1 + self.imageURLs.count + self.imageIndex) % self.imageURLs.count;
+    
+    cell.imageURL = self.imageURLs[index];
     
     return cell;
 }

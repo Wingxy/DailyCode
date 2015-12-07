@@ -47,6 +47,9 @@
                             <outlet property="delegate" destination="qgW-b5-PY5" id="2RU-ZT-lFh"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="layout" destination="fcP-g2-6uN" id="i1T-dG-UZZ"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48f-fy-d8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,18 +7,15 @@
 //
 
 #import "CarouselViewController.h"
+#import "CarouselCell.h"
 
 @interface CarouselViewController ()
 
 @property (nonatomic, strong) NSArray *imageURLs;
 
-
-
 @end
 
 @implementation CarouselViewController
-
-static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +38,23 @@ static NSString * const reuseIdentifier = @"Cell";
     }
     
     self.imageURLs = arrayM.copy;
+}
+
+
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
+    return self.imageURLs.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    CarouselCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    cell.imageURL = self.imageURLs[indexPath.item];
+    
+    return cell;
 }
 
 @end

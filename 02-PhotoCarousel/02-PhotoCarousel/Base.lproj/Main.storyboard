@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="bottom" secondItem="nRE-Pj-8WR" secondAttribute="bottom" id="hnI-BG-UXE"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="iconImageView" destination="nRE-Pj-8WR" id="qFL-Yf-Aa9"/>
+                                    <outlet property="iconView" destination="nRE-Pj-8WR" id="TTJ-Nc-PGX"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

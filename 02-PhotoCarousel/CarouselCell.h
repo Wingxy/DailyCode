@@ -2,7 +2,7 @@
 //  CarouselCell.h
 //  02-PhotoCarousel
 //
-//  Created by wxy on 15/12/6.
+//  Created by wxy on 15/12/7.
 //  Copyright © 2015年 wxy. All rights reserved.
 //
 

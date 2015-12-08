@@ -74,6 +74,7 @@
 
 
 #pragma mark - UICollectionViewDataSource
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     return self.imageURLs.count;
@@ -88,9 +89,30 @@
     // 显示图片索引编号 初始时
     NSInteger index = (indexPath.item - 1 + self.imageURLs.count + self.imageIndex) % self.imageURLs.count;
     
+    NSLog(@"%@ %zd", indexPath, self.imageIndex);
+    
     cell.imageURL = self.imageURLs[index];
     
     return cell;
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    NSInteger offset = (scrollView.contentOffset.x / scrollView.bounds.size.width) - 1;
+    
+    NSLog(@"contentOffset == %@",NSStringFromCGPoint(scrollView.contentOffset));
+    NSLog(@"offset.x == %f",scrollView.contentOffset.x);
+    NSLog(@"width == %f", scrollView.bounds.size.width);
+    NSLog(@"offset == %ld", (long)offset);
+    
+    // 根据偏移量 确定当前要显式的图片索引
+    // 重点就在于改变图片对应的编号
+    self.imageIndex = (self.imageIndex + offset + self.imageURLs.count) %self.imageURLs.count;
+    
+    // 滚动 collectionView
+    [scrollView setContentOffset:CGPointMake(scrollView.bounds.size.width, 0)];
 }
 
 @end

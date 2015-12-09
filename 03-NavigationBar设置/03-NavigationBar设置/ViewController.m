@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -117,6 +118,10 @@
 }
 
 - (void)jump2second {
+    
+    SecondViewController *vc = [[SecondViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
     
 }

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OneViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,11 +21,11 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UIViewController *vc1 = [[UIViewController alloc] init];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"OneViewController" bundle:nil];
     
-    vc1.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
+    OneViewController *vc = [sb instantiateViewControllerWithIdentifier:@"OneViewController"];
 
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc1];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     
     // 必须设置根控制器 否则崩溃
     self.window.rootViewController = nav;

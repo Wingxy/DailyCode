@@ -25,6 +25,12 @@
     
     NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
     
+    /*
+     
+     布局适配的方法多种，不一定要参照于同一个控件，参照不同的控件，设置不同的约束一样可以进行布局约束
+     
+     */
+    
     if ([UIScreen mainScreen].bounds.size.height == 736) {
         
         self.tryBtnBottomToSuperViewBottomConstraint.constant = 100;
